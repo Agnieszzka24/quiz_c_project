@@ -1,0 +1,25 @@
+Pytanie1|Jaka jest twoja ulubiona pora roku?
+A|Wiosna|1|0
+B|Lato|2|0
+C|Jesien|0|2
+D|Zima|0|3
+Pytanie2|Jak zazwyczaj reagujesz na niespodzianki?
+A|Usmiechem|2|0
+B|Obojetnoscia|1|1
+C|Zmartwieniem|0|2
+D|Zloscia|0|3
+Pytanie3|Jaka jest twoja ulubiona pora roku?
+A|Wiosna|1|0
+B|Lato|2|0
+C|Jesien|0|2
+D|Zima|0|3
+Pytanie4|Jak zazwyczaj reagujesz na niespodzianki?
+A|Usmiechem|2|0
+B|Obojetnoscia|1|1
+C|Zmartwieniem|0|2
+D|Zloscia|0|3
+Pytanie5|Jak zazwyczaj reagujesz na niespodzianki?
+A|Usmiechem|2|0
+B|Obojetnoscia|1|1
+C|Zmartwieniem|0|2
+D|Zloscia|0|3

@@ -1,0 +1,15 @@
+Czy lubisz byc w centrum uwagi?|10|0
+Czy preferujesz poznawanie nowych osob?|8|2
+Czy czesto czujesz potrzebe samotnosci?|0|10
+Czy lubisz glosne imprezy?|10|0
+Czy latwo nawiazujesz rozmowy z obcymi ludzmi?|9|1
+Czy wolisz spokojny wieczor niz spotkania towarzyskie?|0|9
+Czy drazni Cie halas i zamieszanie?|0|10
+Czy sprawia Ci radosc wystepowanie przed innymi?|10|0
+Czy czesto myslisz przed podjeciem dzialania?|0|8
+Czy lubisz miec duzo znajomych?|10|0
+Czy latwo zmeczysz sie zbyt duza iloscia bodzcow?|0|10
+Czy wyjscie do kina samemu jest dla Ciebie lepsze niz ze znajomymi?|0|8
+Czy lubisz prowadzic ozywione dyskusje?|10|0
+Czy wolisz zadania, ktore wymagaja skupienia i ciszy?|0|10
+Czy czujesz sie dobrze, bedac liderem grupy?|9|0
