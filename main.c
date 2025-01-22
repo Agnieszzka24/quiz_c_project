@@ -105,11 +105,19 @@ void showResults() {
     }
 
     char line[MAX_LINE];
+    int results = 0;
+
     printf("\n=== Wyniki ===\n");
+
     while (fgets(line, sizeof(line), file)) {
         printf("%s", line);
+        results = 1;
     }
     fclose(file);
+
+    if (!results) {
+        printf("Brak wynikow do wyswietlenia.\n");
+    }
 }
 
 // Funkcja czyszczenia wyników
@@ -181,11 +189,19 @@ void runYesNoQuiz(const char *nickname) {
             displayQuestionProgressBar(i + 1, questionCount);
 
             char answer;
-            do {
-                printf("%d. %s (T/N): ", i + 1, questions[i].question);
+            while (1) {
+                printf("%d. %s (T/N): lub 0 by wyjsc", i + 1, questions[i].question);
                 scanf(" %c", &answer);
+
+                if (answer == '0') {
+                    printf("Wyjscie z quizu \n");
+                    return;
+                }
+
                 answer = toupper(answer);
-            } while (answer != 'T' && answer != 'N');
+                if (answer == 'T' || answer == 'N') break;
+                printf("Nieprawidlowa odpowiedz. Wpisz T lub N. lub 0 by wyjsc \n");
+            }
 
             if (answer == 'T') {
                 totalPoints[0] += questions[i].points[0]; // Ekstrawertyk
@@ -248,17 +264,26 @@ void runMultiChoiceQuiz(const char *nickname) {
         for (int i = 0; i < questionCount; i++) {
             displayQuestionProgressBar(i + 1, questionCount);
 
-            printf("%d. %s\n", i + 1, questions[i].question);
+            printf("\t %d. %s\n", i + 1, questions[i].question);
             for (int j = 0; j < 4; j++) {
-                printf("%c. %s\n", 'A' + j, questions[i].answers[j]);
+                printf("\t \t %c. %s\n", 'A' + j, questions[i].answers[j]);
             }
 
             char answer;
-            do {
-                printf("Twoja odpowiedz (A-D): ");
+
+            while (1) {
+                printf("Twoja odpowiedz (A-D) lub 0 aby wyjsc: ");
                 scanf(" %c", &answer);
+
+                if (answer == '0') {
+                    printf("Wyjscie z quizu \n");
+                    return;
+                }
+
                 answer = toupper(answer);
-            } while (answer < 'A' || answer > 'D');
+                if (answer >= 'A' && answer <= 'D') break; // poprawna odpowiedź
+                printf("Nieprawidlowa odpowiedz. Wpisz A, B, C lub D. lub 0, aby wyjsc. \n"); // Dodano komunikat
+            }
 
             int aIndex = answer - 'A';
             totalPoints[0] += questions[i].points[aIndex][0];
@@ -293,7 +318,12 @@ int main() {
         printf("4. Wyczysc wyniki\n");
         printf("5. Wyjdz\n");
         printf("Twoj wybor: ");
-        scanf("%d", &choice);
+
+        if (scanf("%d", &choice) != 1 || choice < 1 || choice > 5) {
+            printf("Nieprawidlowy wybor, sprobuj ponownie.\n");
+            while (getchar() != '\n'); // Czyszczenie bufora
+            continue;
+        }
 
         switch (choice) {
             case 1:
