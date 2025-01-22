@@ -277,7 +277,7 @@ void runMultiChoiceQuiz(const char *nickname) {
     }
 }
 
-
+//eo
 int main() {
     char nickname[MAX_LINE];
     int choice;
