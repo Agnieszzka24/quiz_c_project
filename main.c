@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-#include <unistd.h> // Dla funkcji sleep()
+#include <windows.h>
+#include <unistd.h>
 
 #define MAX_LINE 256
 #define MAX_QUESTIONS 20
@@ -27,6 +28,15 @@ void clearResults();
 void displayProgressBar(const char *label, int percentage);
 void displayQuestionProgressBar(int current, int total);
 void saveResults(const char *nickname, const char *quizType, int extrovertPercent, int introvertPercent);
+
+
+void enableANSIColors() {
+    HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+    DWORD dwMode = 0;
+    GetConsoleMode(hOut, &dwMode);
+    dwMode |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;
+    SetConsoleMode(hOut, dwMode);
+}
 
 // Funkcja do wczytywania pytań tak/nie z pliku
 void loadYesNoQuestions(const char *filename, YesNoQuestion questions[], int *questionCount) {
@@ -133,11 +143,16 @@ void clearResults() {
 
 // Funkcja wyświetlania paska postępu
 void displayProgressBar(const char *label, int percentage) {
+
+    const char *colorStart = "\033[35m";  // Fioletowy (magenta)
+    const char *colorEnd = "\033[0m";
+
     printf("%s: %d%% [", label, percentage);
     int filled = (percentage * PROGRESS_BAR_LENGTH) / 100;
+
     for (int i = 0; i < PROGRESS_BAR_LENGTH; i++) {
         if (i < filled)
-            printf("#");
+            printf("%s#%s", colorStart, colorEnd);
         else
             printf(" ");
     }
@@ -304,6 +319,7 @@ void runMultiChoiceQuiz(const char *nickname) {
 
 //eo
 int main() {
+    enableANSIColors(); // Aktywuj obsługę kolorów
     char nickname[MAX_LINE];
     int choice;
 
