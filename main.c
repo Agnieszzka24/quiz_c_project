@@ -238,6 +238,10 @@ void runYesNoQuiz(const char *nickname) {
         double percentageA = ((double)pointsA / maxPoints) * 100;
         double percentageB = 100 - percentageA;
 
+        if (percentageA + percentageB != 100) {
+            percentageB = 100 - percentageA;
+        }
+
         // Wyswietlanie wynikow w zaleznosci od wybranego quizu
         if (choice == 1) {
             // Quiz Ekstrawertyk vs. Introwertyk

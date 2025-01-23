@@ -1,4 +1,1 @@
-Nick: aga | Quiz: Jak reagujesz na stres? | Ekstrawertyk: 52% | Introwertyk: 47%
-Nick: aga | Quiz: Ekstrawertyk czy introwertyk? | Ekstrawertyk: 46% | Introwertyk: 53%
-Nick: aga | Quiz: Bezpieczna vs Ryzykowna decyzja | Ekstrawertyk: 50% | Introwertyk: 50%
-Nick: aga | Quiz: Jakim jestes rodzajem jedzenia | Ekstrawertyk: 100% | Introwertyk: 0%
+Nick: aga | Quiz: Czy jestes optymista? | Ekstrawertyk: 69% | Introwertyk: 30%
