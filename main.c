@@ -165,7 +165,6 @@ void displayQuestionProgressBar(int current, int total) {
     displayProgressBar("", percentage);
 }
 
-// Funkcja uruchamiania quizu tak/nie
 void runYesNoQuiz(const char *nickname) {
     YesNoQuestion questions[MAX_QUESTIONS];
     int questionCount = 0;
@@ -186,10 +185,10 @@ void runYesNoQuiz(const char *nickname) {
         const char *filename;
         switch (choice) {
             case 1:
-                filename = "quiz_yesno1.txt";
+                filename = "quiz_yesno1.txt";  // Ekstrawertyk vs. Introwertyk
                 break;
             case 2:
-                filename = "quiz_yesno2.txt";
+                filename = "quiz_yesno2.txt";  // Optymista vs. Pesymista
                 break;
             default:
                 printf("Nieprawidlowy wybor, sprobuj ponownie.\n");
@@ -198,44 +197,66 @@ void runYesNoQuiz(const char *nickname) {
 
         loadYesNoQuestions(filename, questions, &questionCount);
 
-        int totalPoints[2] = {0, 0}; // [0] - ekstrawertyk, [1] - introwertyk
+        int pointsA = 0;  // Punkty dla pierwszej kategorii
+        int pointsB = 0;  // Punkty dla drugiej kategorii
+        int maxPoints = 0; // Maksymalna liczba punktow (suma maksymalnych punktow dla kazdego pytania)
 
         for (int i = 0; i < questionCount; i++) {
             displayQuestionProgressBar(i + 1, questionCount);
 
             char answer;
             while (1) {
-                printf("%d. %s (T/N): lub 0 by wyjsc", i + 1, questions[i].question);
+                printf("%d. %s (T/N): lub 0 by wyjsc: ", i + 1, questions[i].question);
                 scanf(" %c", &answer);
 
                 if (answer == '0') {
-                    printf("Wyjscie z quizu \n");
+                    printf("Wyjscie z quizu.\n");
                     return;
                 }
 
                 answer = toupper(answer);
                 if (answer == 'T' || answer == 'N') break;
-                printf("Nieprawidlowa odpowiedz. Wpisz T lub N. lub 0 by wyjsc \n");
+                printf("Nieprawidlowa odpowiedz. Wpisz T lub N.\n");
             }
 
+            // Dodanie punktow na podstawie odpowiedzi
             if (answer == 'T') {
-                totalPoints[0] += questions[i].points[0]; // Ekstrawertyk
-            } else {
-                totalPoints[1] += questions[i].points[1]; // Introwertyk
+                pointsA += questions[i].points[0];  // T -> pierwsza kategoria
+                pointsB += questions[i].points[1];  // T -> druga kategoria
+            } else if (answer == 'N') {
+                pointsA += questions[i].points[1];  // N -> pierwsza kategoria
+                pointsB += questions[i].points[0];  // N -> druga kategoria
             }
+
+            // Zwiekszanie maksymalnej liczby punktow na podstawie maksymalnych wartosci punktowych
+            maxPoints += (questions[i].points[0] > questions[i].points[1])
+                             ? questions[i].points[0]
+                             : questions[i].points[1];
         }
 
-        int total = totalPoints[0] + totalPoints[1];
-        int extroPercent = (totalPoints[0] * 100) / total;
-        int introPercent = (totalPoints[1] * 100) / total;
+        // Obliczanie procentow
+        double percentageA = ((double)pointsA / maxPoints) * 100;
+        double percentageB = 100 - percentageA;
 
-        printf("\nWynik quizu tak/nie:\n");
-        displayProgressBar("Ekstrawertyk", extroPercent);
-        displayProgressBar("Introwertyk", introPercent);
+        // Wyswietlanie wynikow w zaleznosci od wybranego quizu
+        if (choice == 1) {
+            // Quiz Ekstrawertyk vs. Introwertyk
+            printf("\nWynik quizu tak/nie:\n");
+            displayProgressBar("Ekstrawertyk", (int)percentageA);
+            displayProgressBar("Introwertyk", (int)percentageB);
+        } else if (choice == 2) {
+            // Quiz Optymista vs. Pesymista
+            printf("\nWynik quizu tak/nie:\n");
+            displayProgressBar("Optymista", (int)percentageA);
+            displayProgressBar("Pesymista", (int)percentageB);
+        }
 
-        saveResults(nickname, "Quiz Tak/Nie", extroPercent, introPercent);
+        // Zapis wynikow
+        saveResults(nickname, (choice == 1) ? "Ekstrawertyk czy introwertyk?" : "Czy jestes optymista?", (int)percentageA, (int)percentageB);
     }
 }
+
+
 
 // Funkcja uruchamiania quizu wielokrotnego wyboru
 void runMultiChoiceQuiz(const char *nickname) {
@@ -245,9 +266,9 @@ void runMultiChoiceQuiz(const char *nickname) {
 
     while (1) {
         printf("\nWybierz quiz wielokrotnego wyboru:\n");
-        printf("1. Quiz 1\n");
-        printf("2. Quiz 2\n");
-        printf("3. Quiz 3\n");
+        printf("1. Jak reagujesz na stresujace sytuacje?\n");
+        printf("2. Kiedy masz do wyboru rozne opcje, czy decydujesz się na najbezpieczniejszą czy najbardziej ryzykowna?\n");
+        printf("3. Jakim jestes rodzajem jedzenia?\n");
         printf("0. Wroc do menu glownego\n");
         printf("Twoj wybor: ");
         scanf("%d", &choice);
@@ -310,8 +331,8 @@ void runMultiChoiceQuiz(const char *nickname) {
         int pesPercent = (totalPoints[1] * 100) / total;
 
         printf("\nWynik quizu wielokrotnego wyboru:\n");
-        displayProgressBar("Optymista", optPercent);
-        displayProgressBar("Pesymista", pesPercent);
+        displayProgressBar("Pozytywnie", optPercent);
+        displayProgressBar("Negatywnie", pesPercent);
 
         saveResults(nickname, "Quiz Wielokrotnego Wyboru", optPercent, pesPercent);
     }

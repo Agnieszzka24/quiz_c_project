@@ -1,1 +1,7 @@
-Nick: aga | Quiz: Quiz Tak/Nie | Ekstrawertyk: 14% | Introwertyk: 85%
+Nick: aga | Quiz: Quiz Tak/Nie | Ekstrawertyk: 60% | Introwertyk: 40%
+Nick: aga | Quiz: Quiz Tak/Nie | Ekstrawertyk: 53% | Introwertyk: 46%
+Nick: aga | Quiz: Ekstrawertyk czy introwertyk? | Ekstrawertyk: 46% | Introwertyk: 53%
+Nick: aga | Quiz: Czy jestes optymista? | Ekstrawertyk: 100% | Introwertyk: 0%
+Nick: aga | Quiz: Czy jestes optymista? | Ekstrawertyk: 76% | Introwertyk: 23%
+Nick: aga | Quiz: Quiz Wielokrotnego Wyboru | Ekstrawertyk: 100% | Introwertyk: 0%
+Nick: aga | Quiz: Quiz Wielokrotnego Wyboru | Ekstrawertyk: 52% | Introwertyk: 47%

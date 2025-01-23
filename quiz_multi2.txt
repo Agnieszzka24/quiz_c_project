@@ -1,0 +1,40 @@
+Pytanie1|Kiedy masz do wyboru różne opcje, czy decydujesz się na najbezpieczniejszą czy najbardziej ryzykowną?
+A|Zawsze wybieram opcje najbezpieczniejsza|3|0
+B|Wybieram opcje najczesciej ryzykowne|0|3
+C|Wybieram to, co daje mi wieksza pewnosc|2|0
+D|Zalezy od sytuacji|1|2
+Pytanie2|Czy podejmujesz ryzyko w podejmowaniu nowych projektów?
+A|Tak, lubie nowe wyzwania|0|3
+B|Unikam nowych wyzwań|3|0
+C|Decyduje sie, jesli jestem pewien, ze cos mi to da|2|0
+D|Czasami wybieram opcje ryzykowna, ale rozważam konsekwencje|1|2
+Pytanie3|Jak reagujesz na zmiany w pracy lub szkole?
+A|Boje sie zmian i szukam bezpiecznych rozwiazan|3|0
+B|Jestem otwarty na zmiany, nawet jesli sa ryzykowne|0|3
+C|Zmieniam tylko wtedy, gdy mam pewnosc, ze bedzie lepiej|2|0
+D|Zalezy od zmiany|1|2
+Pytanie4|Czy masz tendencje do podejmowania ryzyka w inwestycjach?
+A|Tak, lubie ryzykowac|0|3
+B|Zawsze szukam bezpiecznych inwestycji|3|0
+C|Szukam zlotego srodka|2|0
+D|Decyduje sie na ryzyko tylko po konsultacji z ekspertami|1|2
+Pytanie5|Kiedy podejmujesz decyzje, czy rozważasz ewentualne konsekwencje?
+A|Tak, zawsze analizuje ryzyko|3|0
+B|Zwykle nie mysle o konsekwencjach|0|3
+C|Rozwazam je, ale decyduje sie na dzialanie|2|0
+D|Decyduje sie tylko po rozważeniu ryzyka|1|2
+Pytanie6|Czy podejmujesz ryzyko w relacjach międzyludzkich?
+A|Nie, wolę bezpieczne, sprawdzone relacje|3|0
+B|Tak, jestem otwarty/a na ryzyko|0|3
+C|Decyduje sie na ryzyko tylko wtedy, gdy czuję zaufanie|2|0
+D|Zalezy od osoby|1|2
+Pytanie7|Czy wybierasz ryzykowne sportowe aktywności?
+A|Tak, uwielbiam adrenalinke|0|3
+B|Zdecydowanie unikam niebezpiecznych sportów|3|0
+C|Raczej wybieram bezpieczniejsze opcje|2|0
+D|Zależy od sytuacji|1|2
+Pytanie8|Czy łatwo podejmujesz decyzję, nawet jeśli wiąże się to z dużym ryzykiem?
+A|Tak, podejmuje decyzje szybko i bez wahania|0|3
+B|Wybieram zawsze opcje bezpieczne|3|0
+C|Przy ryzyku staram się dobrze rozważyć wszystkie opcje|2|0
+D|Tylko w wyjątkowych sytuacjach podejmuje ryzyko|1|2

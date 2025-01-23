@@ -1,0 +1,13 @@
+Czy szukasz pozytywow w kazdej sytuacji?|10|0
+Czy czesto sie usmiechasz?|10|0
+Czy widzisz szklanke jako do polowy pelna?|10|0
+Czy czujesz, że nic nigdy się nie uda? |0|10
+Czy jestes osoba, ktora cieszy sie z drobnych rzeczy?|10|0
+Czy wierzysz, ze wszystko sie ulozy?|10|0
+Czy potrafisz znalezc pozytywna strone w trudnych sytuacjach?|10|0
+Czy uwazasz, ze przyszlosc przynosi dobre rzeczy?|10|0
+Czy obawiasz się, że przyszłość będzie pełna trudności? |0|10
+Czy czesto myslisz o pozytywnych rezultatach?|10|0
+Czy czujesz, ze potrafisz przezwyciezyc trudnosci?|10|0
+Czy rzadko widzisz pozytywne strony trudnych sytuacji? |0|10
+Czy latwo nawiazesz kontakt z innymi i zawsze starasz sie byc pomocny?|10|0

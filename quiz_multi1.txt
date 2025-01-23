@@ -1,25 +1,50 @@
-Pytanie1|Jaka jest twoja ulubiona pora roku?
-A|Wiosna|1|0
-B|Lato|2|0
-C|Jesien|0|2
-D|Zima|0|3
-Pytanie2|Jak zazwyczaj reagujesz na niespodzianki?
-A|Usmiechem|2|0
-B|Obojetnoscia|1|1
-C|Zmartwieniem|0|2
-D|Zloscia|0|3
-Pytanie3|Jaka jest twoja ulubiona pora roku?
-A|Wiosna|1|0
-B|Lato|2|0
-C|Jesien|0|2
-D|Zima|0|3
-Pytanie4|Jak zazwyczaj reagujesz na niespodzianki?
-A|Usmiechem|2|0
-B|Obojetnoscia|1|1
-C|Zmartwieniem|0|2
-D|Zloscia|0|3
-Pytanie5|Jak zazwyczaj reagujesz na niespodzianki?
-A|Usmiechem|2|0
-B|Obojetnoscia|1|1
-C|Zmartwieniem|0|2
-D|Zloscia|0|3
+Pytanie1|Jak reagujesz na stresujace sytuacje?
+A|Zachowuje spokoj|3|0
+B|Panikuje|0|3
+C|Czuje sie zestresowany/a, ale szukam wsparcia|0|2
+D|Starami sie rozwiazac problem od razu|2|0
+Pytanie2|Co robisz, gdy musisz podjac szybka decyzje?
+A|Przmyslam dokladnie wszystkie opcje|2|0
+B|Zastanawiam sie zbyt dlugo|0|2
+C|Czuje sie zagubiony/a i nie wiem, co zrobic|0|3
+D|Dzialam bez wahania|3|0
+Pytanie3|Jak reagujesz na krytyke?
+A|Biore ja bardzo osobiście i przezywam|0|3
+B|Czuje sie zraniony/a, ale staram sie nie pokazywac tego|0|2
+C|Przyjmuje ja spokojnie i staram sie poprawic|3|0
+D|Zastanawiam sie nad nia, ale nie przejmuje sie za bardzo|2|0
+Pytanie4|Jak czesto odczuwasz stres?
+A|Czesto, ale staram sie z tym walczyc|0|2
+B|Bardzo rzadko|3|0
+C|Ciągle jestem zestresowany/a|0|3
+D|Od czasu do czasu, ale potrafie sobie z tym radzic|2|0
+Pytanie5|Co robisz, gdy napotykasz problem w pracy lub szkole?
+A|Szukam pomocy od innych osob|0|2
+B|Zastanawiam sie, ale staram sie nie panikowac|2|0
+C|Szukam rozwiazania i ide do przodu|3|0
+D|Czuje sie przytłoczony/a i nie wiem, co robic|0|3
+Pytanie6|Jak reagujesz na zblizajacy sie deadline?
+A|Czuje sie zestresowany/a|0|2
+B|Planowanie i dzialanie na czas|3|0
+C|Jestem troche zestresowany/a, ale daje rade|2|0
+D|Panikuje i nie wiem, jak to ogarnac|0|3
+Pytanie7|Co robisz, kiedy masz do rozwiazania trudna sytuacje interpersonalna?
+A|Czuje sie niekomfortowo|0|2
+B|Szukam kompromisu i rozmawiam|3|0
+C|Unikam kontaktu, nie potrafie poradzic sobie z sytuacja|0|3
+D|Starami sie unikac konfliktu, ale szukam wyjscia|2|0
+Pytanie8|Jak oceniasz swoje umiejetnosci radzenia sobie ze stresem?
+A|Radze sobie w wiekszosci sytuacji|2|0
+B|Czasami mam problem z opanowaniem emocji|0|2
+C|Zdecydowanie mam trudnosci w radzeniu sobie ze stresem|0|3
+D|Swietnie radze sobie ze stresem|3|0
+Pytanie9|Jak traktujesz porazki?
+A|Zwykle wyciagam wnioski, ale nie przejmuje sie za bardzo|2|0
+B|Ucze sie na nich i staram sie poprawic|3|0
+C|Trudno mi sie z nimi pogodzic, ale probuje sie podniesc|0|2
+D|Zwykle dlugo sie zalamuje i nie potrafie wrocic do normalnosci|0|3
+Pytanie10|Co robisz, gdy sytuacja staje sie zbyt przytlaczajaca?
+A|Biore gleboki oddech i probuje rozwiazac problem|3|0
+B|Czuje sie bezradny/a|0|3
+C|Staram sie znalezc chwile spokoju i potem wracam do dzialania|2|0
+D|Poddaje sie i szukam pomocy|0|2
