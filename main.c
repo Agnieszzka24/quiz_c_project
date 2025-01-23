@@ -258,7 +258,6 @@ void runYesNoQuiz(const char *nickname) {
 
 
 
-// Funkcja uruchamiania quizu wielokrotnego wyboru
 void runMultiChoiceQuiz(const char *nickname) {
     MultiChoiceQuestion questions[MAX_QUESTIONS];
     int questionCount = 0;
@@ -267,7 +266,7 @@ void runMultiChoiceQuiz(const char *nickname) {
     while (1) {
         printf("\nWybierz quiz wielokrotnego wyboru:\n");
         printf("1. Jak reagujesz na stresujace sytuacje?\n");
-        printf("2. Kiedy masz do wyboru rozne opcje, czy decydujesz się na najbezpieczniejszą czy najbardziej ryzykowna?\n");
+        printf("2. Kiedy masz do wyboru rozne opcje, czy decydujesz się na najbezpieczniejsza czy najbardziej ryzykowna?\n");
         printf("3. Jakim jestes rodzajem jedzenia?\n");
         printf("0. Wroc do menu glownego\n");
         printf("Twoj wybor: ");
@@ -280,13 +279,13 @@ void runMultiChoiceQuiz(const char *nickname) {
         const char *filename;
         switch (choice) {
             case 1:
-                filename = "quiz_multi1.txt";
+                filename = "quiz_multi1.txt";  // Jak reagujesz na stres?
                 break;
             case 2:
-                filename = "quiz_multi2.txt";
+                filename = "quiz_multi2.txt";  // Bezpieczna vs ryzykowna decyzja
                 break;
             case 3:
-                filename = "quiz_multi3.txt";
+                filename = "quiz_multi3.txt";  // Rodzaj jedzenia
                 break;
             default:
                 printf("Nieprawidlowy wybor, sprobuj ponownie.\n");
@@ -295,7 +294,8 @@ void runMultiChoiceQuiz(const char *nickname) {
 
         loadMultiChoiceQuestions(filename, questions, &questionCount);
 
-        int totalPoints[2] = {0, 0}; // [0] - optymista, [1] - pesymista
+        int totalPoints[2] = {0, 0}; // [0] - Pozytywne, [1] - Negatywne
+        int maxPoints[2] = {0, 0};  // Maksymalne punkty w każdej kategorii
 
         for (int i = 0; i < questionCount; i++) {
             displayQuestionProgressBar(i + 1, questionCount);
@@ -322,21 +322,44 @@ void runMultiChoiceQuiz(const char *nickname) {
             }
 
             int aIndex = answer - 'A';
-            totalPoints[0] += questions[i].points[aIndex][0];
-            totalPoints[1] += questions[i].points[aIndex][1];
+            totalPoints[0] += questions[i].points[aIndex][0];  // Pozytywne
+            totalPoints[1] += questions[i].points[aIndex][1];  // Negatywne
+
+            // Zbieranie maksymalnych punktów z każdej kategorii
+            maxPoints[0] += questions[i].points[aIndex][0];  // Maksymalna liczba punktów dla Pozytywne
+            maxPoints[1] += questions[i].points[aIndex][1];  // Maksymalna liczba punktów dla Negatywne
         }
 
-        int total = totalPoints[0] + totalPoints[1];
-        int optPercent = (totalPoints[0] * 100) / total;
-        int pesPercent = (totalPoints[1] * 100) / total;
+        // Obliczanie procentów
+        int totalMaxPoints = maxPoints[0] + maxPoints[1];
+        int pozytywnePercent = (totalPoints[0] * 100) / totalMaxPoints;
+        int negatywnePercent = (totalPoints[1] * 100) / totalMaxPoints;
 
         printf("\nWynik quizu wielokrotnego wyboru:\n");
-        displayProgressBar("Pozytywnie", optPercent);
-        displayProgressBar("Negatywnie", pesPercent);
 
-        saveResults(nickname, "Quiz Wielokrotnego Wyboru", optPercent, pesPercent);
+        // Wyświetlanie wyników w zależności od wybranego quizu
+        if (choice == 1) {
+            // Quiz Jak reagujesz na stresujące sytuacje
+            displayProgressBar("Pozytywnie", pozytywnePercent);
+            displayProgressBar("Negatywnie", negatywnePercent);
+        } else if (choice == 2) {
+            // Quiz Kiedy masz do wyboru różne opcje
+            displayProgressBar("Bezpieczna", pozytywnePercent);
+            displayProgressBar("Ryzykowna", negatywnePercent);
+        } else if (choice == 3) {
+            // Quiz Jaki jesteś rodzajem jedzenia
+            displayProgressBar("Hamburger", pozytywnePercent);
+            displayProgressBar("Salatka", negatywnePercent);
+        }
+
+        // Zapis wyników
+        saveResults(nickname, (choice == 1) ? "Jak reagujesz na stres?" :
+                            (choice == 2) ? "Bezpieczna vs Ryzykowna decyzja" : "Jakim jestes rodzajem jedzenia",
+                            pozytywnePercent, negatywnePercent);
     }
 }
+
+
 
 //eo
 int main() {
