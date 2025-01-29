@@ -1,40 +1,40 @@
-Pytanie1|Jaki jesteś rodzajem jedzenia?
-A|Jestem gotowy do zjedzenia, po prostu czekam na okazję|0|3
-B|Jestem pełen zdrowia i energii, gotów do działania|3|0
-C|Lubię być pyszny i sprawiać radość innym|2|0
-D|Jestem ciepły i komfortowy, zawsze odpowiedni na relaks|1|2
-Pytanie2|Jak spędzasz dzień?
-A|Lubię być aktywny i ciągle w ruchu|3|0
+Pytanie1|Jaki jestes rodzajem jedzenia?
+A|Jestem gotowy do zjedzenia, po prostu czekam na okazje|0|3
+B|Jestem pelen zdrowia i energii, gotow do dzialania|3|0
+C|Lubie byc pyszny i sprawiac radosc innym|2|0
+D|Jestem cieply i komfortowy, zawsze odpowiedni na relaks|1|2
+Pytanie2|Jak spedzasz dzien?
+A|Lubie byc aktywny i ciagle w ruchu|3|0
 B|Czasami odpoczywam, ale dbam o siebie|2|0
-C|Jem szybko, gdy jestem głodny, i odpoczywam przy jedzeniu|1|2
-D|Lubię czasem zwolnić tempo i cieszyć się chwilą|0|3
+C|Jem szybko, gdy jestem glodny, i odpoczywam przy jedzeniu|1|2
+D|Lubie czasem zwolnic tempo i cieszyc sie chwila|0|3
 Pytanie3|Twoje ulubione danie to?
-A|Coś, co szybko można zjeść|1|2
-B|Lekka sałatka lub coś, co mnie ożywia|3|0
-C|Pyszna pizza, która daje mi radość|2|0
-D|Ciepła i sycąca zupa, która mnie uspokaja|0|3
-Pytanie4|Jak reagujesz na szybkie tempo życia?
-A|Lubię je, nie mam nic przeciwko pośpiechowi|0|3
-B|Preferuję nieco wolniejsze tempo, spokojne jedzenie|2|0
-C|Lubię równowagę między stresem a relaksem|3|0
-D|Staram się zwolnić i cieszyć się każdą chwilą|1|2
-Pytanie5|Co robisz po ciężkim dniu pracy?
-A|Szukam szybkiego posiłku, by odzyskać energię|1|2
-B|Lubię przygotować coś lekkiego i zdrowego|3|0
-C|Czasami zamawiam pizzę lub coś smacznego|2|0
-D|Relaksuję się przy spokojnym, ciepłym posiłku|0|3
-Pytanie6|Jak lubisz zaczynać dzień?
-A|Od szybkiego śniadania, bo nie mam czasu|0|3
-B|Od zdrowego posiłku, który da mi energię|3|0
-C|Od czegoś pysznego, co sprawia mi radość|2|0
-D|Zaczynam powoli, ze spokojnym śniadaniem|1|2
-Pytanie7|W jakiej atmosferze lubisz jeść?
-A|W pośpiechu, szybko i wygodnie|0|3
-B|W spokojnym miejscu, w towarzystwie zdrowych dań|3|0
-C|Gdziekolwiek, byleby jedzenie było pyszne|2|0
-D|W cichym miejscu, delektując się jedzeniem|1|2
+A|Cos, co szybko mozna zjesc|1|2
+B|Lekka salatka lub cos, co mnie ozywia|3|0
+C|Pyszna pizza, ktora daje mi radosc|2|0
+D|Ciepla i sycaca zupa, ktora mnie uspokaja|0|3
+Pytanie4|Jak reagujesz na szybkie tempo zycia?
+A|Lubie je, nie mam nic przeciwko pospiechowi|0|3
+B|Preferuje nieco wolniejsze tempo, spokojne jedzenie|2|0
+C|Lubie rownowage miedzy stresem a relaksem|3|0
+D|Staram sie zwolnic i cieszyc sie kazda chwila|1|2
+Pytanie5|Co robisz po ciezkim dniu pracy?
+A|Szukam szybkiego posilku, by odzyskac energie|1|2
+B|Lubie przygotowac cos lekkiego i zdrowego|3|0
+C|Czasami zamawiam pizze lub cos smacznego|2|0
+D|Relaksuje sie przy spokojnym, cieplym posilku|0|3
+Pytanie6|Jak lubisz zaczynac dzien?
+A|Od szybkiego sniadania, bo nie mam czasu|0|3
+B|Od zdrowego posilku, ktory da mi energie|3|0
+C|Od czegos pysznego, co sprawia mi radosc|2|0
+D|Zaczynam powoli, ze spokojnym sniadaniem|1|2
+Pytanie7|W jakiej atmosferze lubisz jesc?
+A|W pospiechu, szybko i wygodnie|0|3
+B|W spokojnym miejscu, w towarzystwie zdrowych dan|3|0
+C|Gdziekolwiek, byleby jedzenie bylo pyszne|2|0
+D|W cichym miejscu, delektujac sie jedzeniem|1|2
 Pytanie8|Jaka jest twoja reakcja na zdrowe jedzenie?
-A|Mogę je jeść, ale nie jestem fanem|2|0
-B|Uwielbiam je i czuję się świetnie po nim|3|0
-C|Lubię zdrowe jedzenie, ale czasem wolę coś innego|1|2
-D|Zawsze staram się znaleźć balans między zdrowiem a smakiem|0|3
+A|Moge je jesc, ale nie jestem fanem|2|0
+B|Uwielbiam je i czuje sie swietnie po nim|3|0
+C|Lubie zdrowe jedzenie, ale czasem wole cos innego|1|2
+D|Zawsze staram sie znalezc balans miedzy zdrowiem a smakiem|0|3
