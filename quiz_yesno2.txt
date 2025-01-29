@@ -9,5 +9,4 @@ Czy uwazasz, ze przyszlosc przynosi dobre rzeczy?|10|0
 Czy obawiasz się, że przyszłość będzie pełna trudności? |0|10
 Czy czesto myslisz o pozytywnych rezultatach?|10|0
 Czy czujesz, ze potrafisz przezwyciezyc trudnosci?|10|0
-Czy rzadko widzisz pozytywne strony trudnych sytuacji? |0|10
 Czy latwo nawiazesz kontakt z innymi i zawsze starasz sie byc pomocny?|10|0

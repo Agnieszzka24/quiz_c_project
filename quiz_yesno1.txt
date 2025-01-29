@@ -11,5 +11,4 @@ Czy lubisz miec duzo znajomych?|10|0
 Czy latwo zmeczysz sie zbyt duza iloscia bodzcow?|0|10
 Czy wyjscie do kina samemu jest dla Ciebie lepsze niz ze znajomymi?|0|10
 Czy lubisz prowadzic ozywione dyskusje?|10|0
-Czy wolisz zadania, ktore wymagaja skupienia i ciszy?|0|10
 Czy czujesz sie dobrze, bedac liderem grupy?|10|0
