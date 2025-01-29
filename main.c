@@ -435,4 +435,5 @@ int main() {
                 printf("\033[31mNieprawidlowy wybor, sprobuj ponownie.\033[0m\n");
         }
     }
+ // Agnieszka Mazur
 }
